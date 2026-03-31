@@ -140,7 +140,7 @@ def print_signal_info(signal, sample_rate):
 
 
 def main():
-    print("Обработка звукового сигнала (лабораторная работа)")
+    print("Обработка звукового сигнала")
     print("-" * 55)
 
     start_time = time.time()
@@ -177,11 +177,11 @@ def main():
     print("Построение осциллограммы")
     plot_oscillogram(signal, sample_rate)
     
-    print("Выполнение спектрального анализа (ДПФ)...")
+    print("Выполнение спектрального анализа (ДПФ)")
     magnitude, frequencies = compute_dft_magnitude(signal)
     plot_spectrum(magnitude, frequencies)
     
-    print("Построение гистограммы амплитуд...")
+    print("Построение гистограммы амплитуд")
     plot_histogram(signal)
 
     end_time = time.time()
